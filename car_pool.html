@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IWP project</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <style>  
+        .flex-container {
+    display: flex;
+    width: 1000px;
+    height: 700px;
+    margin-left: 250px;
+}
+
+.flex-child {
+    margin-top: 100px;
+    flex: 1;
+    border: 2px solid #ffa500;
+    background-image: url("images/carpool.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
+    </style>
+</head>
+<body>    
+ <!-- header section starts  -->
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span>T</span>ravel<span> P</span>lanner</a>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+    </nav>
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+</header>
+<div class="flex-container">
+
+    <div class="flex-child magenta">
+      <span style="color: black; width: 500px ;height:50px; font-family: 'Nunito', sans-serif; font-size: 50px; text-align: center; padding-left: 80px; padding-top: 40px;">Have A ride ?<br><br></span>
+      <a href="have_ride.php" class="btn" style="background-color:#ffa500 ; color: white; width: 500px ;height:50px; font-family: 'Nunito', sans-serif; font-size: 30px; text-align: center;">Add Ride Info</a>
+    </div>
+    
+    <div class="flex-child green">
+        <span style="color: black; width: 500px ;height:50px; font-family: 'Nunito', sans-serif; font-size: 50px; text-align: center; padding-left: 80px; padding-top: 40px;">Need A Ride ?<br><br></span>
+      <a href="need_ride.php" class="btn" style="background-color:#ffa500 ; color: white; width: 500px ;height:50px; font-family: 'Nunito', sans-serif; font-size: 30px; text-align: center;">Click To Search</a>
+    </div>
+    
+  </div>
+</body>
+</html>
